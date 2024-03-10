@@ -1,0 +1,9 @@
+name: github action demo
+on: [push] #actiom which will trigger the workflow, it can be a sinfgle event or array, events: like push , pull , pill request
+jobs: #define  the process which will make up the workflow, each job represent the unit of work that can run independently
+ basic-workflow:
+   runs-on: ubuntu-latest  #sepicify the type of execution environment
+   steps:  #steps contains, a list of individual steps that are executed sequentially within a job
+     - name: print some chars
+       run: echo "ITI 44"
+  
